@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+    .container {
+        height: 100%;
+    }
+    .left,
+    .right
+     {
+        height: 100%;
+    }
+    .left {
+        margin-right: 200px;
+        background-color: rgb(33, 190, 218);
+    }
+    .right {
+        float: right;
+        width: 200px;
+        background-color: rgb(204, 61, 61);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="right">右侧固定</div><!-- 吐槽下：我想用BFC + Float 的方法，做了半小时才做出来，只要把这两个div标签换个顺序就可以了，如果.left在前，就做不出效果。 -->
+        <div class="left">左侧自适应,世界这么大还是遇见你，我欢喜喜欢你,世界这么大还是遇见你，我欢喜喜欢你,世界这么大还是遇见你，我欢喜喜欢你,世界这么大还是遇见你，我欢喜喜欢你,世界这么大还是遇见你，我欢喜喜欢你,世界这么大还是遇见你，我欢喜喜欢你,世界这么大还是遇见你，我欢喜喜欢你,世界这么大还是遇见你，我欢喜喜欢你,世界这么大还是遇见你，我欢喜喜欢你</div> 
+    </div>
+</body>
+</html>

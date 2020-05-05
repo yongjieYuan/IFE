@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+    .left {
+        position: absolute;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        background-color: rgb(211, 34, 152);
+    }
+    .right {
+        width: 70%;
+        height: 100%; 
+        margin-left: 30%;
+        background-color: rgb(66, 224, 198);
+    }
+</style>
+<body>
+    <div class="left">左侧占30%</div>
+    <div class="right">右侧占70%</div>
+</body>
+</html>

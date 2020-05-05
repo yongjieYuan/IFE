@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+    .container {
+        position: relative;
+        height: 100%;
+    }
+    .left,
+    .right {
+        height: 100%;
+    }
+    .left {
+        margin-right: 200px;
+        background-color: rgb(56, 137, 230);
+    }
+    .right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        background-color: rgb(27, 189, 41);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="left">左侧自适应</div>
+        <div class="right">右侧固定宽度</div>
+    </div>
+</body>
+</html>

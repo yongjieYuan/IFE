@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编码二</title>
+</head>
+<style>
+/*样式初始化*/
+html,
+body {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    margin: 0 auto;
+}
+a {
+    color: azure;
+    font-size: 1.6rem;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*header区域*/
+.header {
+    width: 100%;
+    background-color: #333;
+    font-size: 2rem;
+    color: #fff;
+}
+.header > div {
+    width: 960px;
+    margin: 0 auto;
+}
+.container {
+    line-height: 7.2rem;
+}
+.header span {
+    display: inline-block;  
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+}
+.nav {
+    float: right;
+    margin-top: -2rem;
+}
+/*Banner区域*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-color: #66BB33;
+}
+.tab {
+    position: absolute;
+    bottom: 0;
+    right: 300px;
+    bottom: .5rem;
+}
+.tab li{
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 35px;
+    vertical-align: bottom;
+    border: 1px solid rgba(0,0,0,.7);
+    background-color: #E0F1D6;
+}
+.tab li span {
+    position: absolute;
+    left: 50%;
+    margin-left: -.5rem;
+    bottom: 1rem;
+}
+.tab li:nth-child(2) {
+    height: 50px;
+}
+.tab li:not(:nth-child(2)) {
+    opacity: .5;
+}
+/*主导航区域*/
+.main-nav {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+}
+.menu {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+.menu li {
+    float: left;
+    width: 200px;
+    height: 70px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 70px;
+    border: 1px solid gray;
+    border-radius: 20px 20px 0 0;
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+.menu li:first-child {
+    border-bottom: 0;
+    background-color: #fff;
+}
+.content {
+    width: 960px;
+    margin: 10px auto;
+}
+.content-1,
+.content-2,
+.content-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.content div {
+    height: 100px;
+    padding: 80px;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid rgba(128,128,128,.7);
+}
+</style>
+<body>
+    <div class="header">
+            <div class="container">
+                <span>Logo</span>
+                <div class="nav">
+                    <a href="">Github</a>
+                    <a href="">Register</a>
+                    <a href="">Login</a>
+                </div>
+            </div>
+    </div>
+    <div class="banner">
+        <ul class="tab">
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+        </ul>
+    </div>
+    <div class="main-nav">
+        <ul class="menu">
+            <li>HOME</li>
+            <li>PROFILE</li>
+            <li>ABOUT</li>
+        </ul>
+    </div>
+    <div class="content">
+        <section class="content-1">
+            <div>This is content 1</div>
+            <div>MaybeContent 2</div>
+            <div>content 3</div>
+        </section>
+        <section class="content-2">
+            <div>content 4</div>
+            <div>content 5</div>
+            <div>content 6</div>
+            <div>content 7</div>
+        </section>
+        <section class="content-3">
+            <div>content 8</div>
+            <div>this is content 9</div>
+            <div>content 10</div>
+        </section>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

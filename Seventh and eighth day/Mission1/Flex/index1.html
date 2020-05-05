@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+    .container {
+        display: flex;
+        height: 100%;
+    }
+    .left,
+    .right {
+        height: 100%;   
+    }
+    .left {
+        flex: 3;
+        background-color: rgb(158, 67, 82);
+    }
+    .right {
+        flex: 7;
+        background-color: rgb(92, 180, 66);
+    }
+</style>
+<body>
+    <dvi class="container">
+        <div class="left">左侧占30%</div>
+        <div class="right">右侧占70%</div>
+    </dvi>
+</body>
+</html>

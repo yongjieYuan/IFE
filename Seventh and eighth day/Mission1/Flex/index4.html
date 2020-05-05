@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        .left,
+        .right {
+            flex: 0 200px;
+            background-color: rgb(185, 37, 37);
+        }
+        .main {
+            flex: 1;
+            background-color: rgb(63, 96, 206);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 吐槽下，还是flex布局爽，据说grid更厉害，不过我只大概了解了下，具体的就不会用了 -->>
+        <div class="left">左侧固定宽度</div>
+        <div class="main">自适应</div>
+        <div class="right">右侧固定宽度</div>
+    </div>
+</body>
+</html>

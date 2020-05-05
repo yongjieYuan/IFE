@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局</title>
+    <style> 
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+        .main,
+        .left,
+        .right {
+            height: 100%;
+        }
+        .left,
+        .right {
+            width: 200px;
+        }
+        .main {
+            overflow: auto;
+            background-color: chocolate;
+        }
+        .left {
+            float: left;
+            background-color: rgb(221, 64, 64);
+        }
+        .right {
+            float: right;
+            background-color: rgb(53, 138, 138);
+        }
+    </style>
+</head>
+<body>
+    <div class="left">左侧固定宽度</div>
+    <div class="right">右侧固定宽度</div>
+    <div class="main">中间自适应</div>
+</body>
+</html>

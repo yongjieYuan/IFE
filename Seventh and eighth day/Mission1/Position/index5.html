@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+    .left,
+    .right,
+    .main {
+         height: 100%;
+     }
+     .main {
+         margin: 0 200px;
+         background-color: rgb(58, 184, 100);
+     }
+     .left {
+         float: left;
+         width: 200px;
+         background-color: rgb(223, 54, 54);
+     }
+     .right {
+         float: right;
+         width: 200px;
+         background-color: rgb(33, 170, 106);
+     }
+</style>
+<body>
+    <!-- 使用了自身浮动方法 -->>
+    <div class="left">左侧固定宽度</div>
+    <div class="right">右侧自适应</div>
+    <div class="main">中间固定宽度</div>
+   
+</body>
+</html>

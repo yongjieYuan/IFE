@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+    .container {
+        overflow: hidden;
+        height: 100%;
+        padding: 0 200px;
+    }
+    .main {
+        float: left;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(216, 98, 98);
+    }
+    .left,
+    .right {
+        position: relative;
+        float: left;
+        width: 200px;
+        height: 100%;
+    }
+    .left {
+        margin-left: -100%;
+        left: -200px;
+        background-color: rgb(80, 78, 177);
+    }
+    .right {
+        margin-left: -200px;
+        right: -200px;
+        background-color: rgba(153, 223, 23, 0.726);
+    }
+</style>
+<body>
+    <div class="container"> 
+        <div class="main">中间自适应</div>  
+        <div class="left">左侧固定</div> 
+        <div class="right">右侧固定</div>
+    </div><!-- 这一课时，我花了我最多的时间就是圣杯布局，我看了很多遍，知道了这概念，我实现的时候，尽然还是花了好长时间，吐槽一下，啊啊啊啊啊！ -->>
+</body>
+</html>
