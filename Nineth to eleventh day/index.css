@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+ul,ol {
+    list-style: none;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("./Fonts/Montserrat-ExtraLight.otf");
+}
+.container {
+    font-family: "Montserrat";
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 10px;   
+}
+/*header部分*/
+.Header {
+    position: relative;
+    height: 998px;
+    background: url(./images/Background.png);
+    text-align: center;
+    z-index: 0;
+    color: #fff;
+}
+.Background {
+    background-color: rgb(20, 20, 20);
+    opacity: 0.651;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 1000px;
+    z-index: -1;
+}
+/*Heder中text部分*/
+.Header .Text {
+    display: inline-block;
+    margin-top: 196px;
+}
+.Header .Text h1 {
+    position: absolute;
+    left: 50%;
+    margin-left: -175.65px;
+    font-size: 62px;
+}
+.Header .Text p {
+    opacity: .7;
+    width: 738px;
+    height: 169px;
+    margin-top: 148px;
+    font-size: 20px;
+    line-height: 32px;
+    word-break: break-all;
+}
+/*header中Sign Up Form部分*/
+.sign_up_form {
+    width: 950px;
+    height: 245px;
+    margin: 25px auto;
+    border: 1px solid rgba(255, 255, 255,.2);
+    border-radius: 3px;
+
+}
+.sign_up_form p:first-child {
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+.sign_up_form p:nth-child(2) {
+    opacity: .5;
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.input_Field {
+    margin-top: 30px;
+}
+.input_Field input {
+    outline: none;
+    width: 250px;
+    height: 14px;
+    margin-right: 35px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255,.2);
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 3px;
+}
+.input_Field button {
+    width: 120px;
+    height: 56px;
+    font-size: 12px;
+    color: black;
+    border: 1px solid  rgba(255, 255, 255,.2);
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*Feature部分*/
+.Feature {
+    height: 750px;
+    text-align: center;
+}
+.Feature .title {
+    display: inline-block;
+    margin-top: 90px;
+}
+.Feature h3:first-child {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.Feature h3:last-child {
+    width: 692px;
+    margin-top: 40px;
+    font-size: 42px;
+    font-weight: lighter;
+    word-break: break-all;
+    line-height: 52px;
+}
+.Feature_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px 0;
+    padding: 0 67px;
+    justify-content: space-around;
+}
+.Feature_items li {
+    width: 545px;
+    margin-bottom: 75px;
+}
+.Feature_items li:nth-of-type(3) {
+    margin-left: -20px;
+}
+.Feature_items li img {
+    float: left;
+    margin-right: 30px;
+    vertical-align: top;
+}
+.Feature_items dl {
+    overflow: auto;
+    text-align: left;
+    vertical-align: top;
+}
+.Feature_items dt {
+    margin-top: -7px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+}
+.Feature_items dd {
+    opacity: .7;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 26px;
+}
+.Call_To_Action {
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+    vertical-align: middle;
+    color: #fff;
+    background: url("./images/6.png");
+    z-index: 0;
+}
+.Call_To_Action::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    opacity: 0.651;
+    z-index: -1;
+}
+.Call_To_Action .left {
+    display: inline-block;
+    margin-top: 180px;
+    margin-left: 316px;
+}
+.Call_To_Action .Text {
+    width: 400px;
+}
+.Call_To_Action .Text p:first-child {
+    font-size: 42px;
+    line-height: 52px;
+}
+.Call_To_Action .Text p:last-child {
+    width: 380px;
+    margin-top: 47px;
+    opacity: .7;
+    font-size: 18px;
+    line-height: 28px;
+    word-break: break-all;
+}
+.Call_To_Action .Btn {
+    margin-top: 60px;
+}
+.Call_To_Action .btn {
+    display: inline-block;
+    width: 240px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 3px;
+}
+.Call_To_Action .Btn-left {
+    color: black;
+    background-color: #fff;
+}
+.Call_To_Action .Btn-right {
+margin-left: 28px;
+border: 1px solid rgba(255, 255, 255,.3);
+}
+.Ipad {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -300px;
+    width: 645px;
+    height: 600px;
+    border: 1px solid rgba(255, 255, 255,.5);
+    border-radius: 5% 0 0 5%;
+}
+.Ipad::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 30px;
+    margin-top: -4px;
+    border: 1px solid rgba(255, 255, 255,.5);
+    border-radius: 50%;
+}
+.screen {
+    position: absolute;
+    top: 50%;
+    right: -1px;
+    margin-top: -271.5px;
+    width: 585px;
+    height: 543px;
+    border-right: none;
+    background: url("./images/2_03.png");
+}
+.Feature-2 {
+    height: 580px;
+    border-bottom: 2px solid #e7e7e7;
+    text-align: center;
+}
+.Feature-2 .title {
+    display: inline-block;
+    margin-top: 100px;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: lighter;
+}
+.Feature-2 ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    padding: 0 328px;
+}
+.Feature-2 .logos span {
+    display: inline-block;
+}
+.Feature-2 .logos p {
+    width: 258px;
+    font-size: 16px;
+    line-height: 26px;
+    word-break: break-all;
+    opacity: .7;
+    margin-top: 35px;
+}
+.Feature-3{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    border-bottom: 2px solid #e7e7e7;
+}
+.Feature-3 .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    margin-bottom: 80px;
+}
+.Feature-3 .content .photo {
+    width: 569px;
+    height: 350px;
+    margin-right: 80px;
+}
+.Feature-3 .title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+}
+.Feature-3 .content p:last-child {
+    opacity: .7;
+    margin-top: 35px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.Feature-3 .content:last-child .photo{
+    margin-right: 0;
+    margin-left: 80px;
+}
+.Team {
+    height: 1085px;
+    text-align: center;
+    border-bottom: 2px solid #e7e7e7;
+}
+.Team h3 {
+    display: inline-block;
+    margin-top: 100px;
+    font-size: 42px;
+    line-height: 52px;
+}
+.Team > p {
+    width: 700px;
+    height: 55px;
+    margin: 36px auto;
+    font-size: 18px;
+    line-height: 28px;
+}
+.User {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 974px;
+    margin: auto;
+    padding-top: 26px;
+}
+.userpic {
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.Intro {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgb(20, 20, 20);
+    opacity: 0.651;
+}
+.userpic:hover .Intro {
+    display: block;
+}
+.userpic:hover .Intro {
+    display: block;
+}
+.Social {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-top: -90px;
+   margin-left: -140px;
+   width: 280PX;
+   height: 180PX;
+}
+.Social span {
+    display: inline-block;
+}
+.Social span:nth-of-type(2) {
+    margin: 0 30px;
+}
+.Social p:first-child {
+    font-size: 20px;
+    line-height: 32px;
+} 
+.Social p:nth-of-type(2) {
+    opacity: .4;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 652px;
+}
+.Contact form {
+    width: 470px;
+    height: 560px;
+    padding: 0 50px;
+    border: 1px solid rgba(0, 0, 0,.1);
+    text-align: center;
+    border-radius: 10px;
+}
+.Contact form p {
+    width: 370px;
+    height: 30px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+.Contact form input {
+    box-sizing: border-box;
+    width: 370px;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0,.2);
+    border-radius: 2px;
+    margin-bottom: 30px;
+    outline: none;
+    font-size: 14px;
+    line-height: 26px;
+}
+textarea {
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    width: 370px;
+    height: 144px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0,.2);
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 26px;
+}
+.Contact form button {
+    width: 370px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    background-color: #141414;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+.Contacts {
+    width: 355px;
+    margin-left: 130px;
+}
+.Contacts .title {
+    font-size: 42px;
+    line-height: 52px;
+}
+.Contacts .title + p {
+    opacity: .7;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.Ways {
+    margin-top: 70px;
+}
+.Ways li {
+    margin-bottom: 37px;
+}
+.Ways img {
+    float: left;
+    margin-right: 13px;
+}
+.Ways li p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    height: 247px;
+    padding: 80px;
+    background-color: #141414;
+    color: #fff;
+}
+.footer a {
+    font-weight: lighter;
+    text-decoration: none;
+    color: #fff;
+}
+.footer dd {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+.footer dt {
+    font-size: 16px;
+    line-height: 46px;
+    opacity: .3;
+}
+.footer .Social-Menu .title {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.footer .Social-Menu .text {
+    width: 240px;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: .3;
+}
+.Social-btn a {
+    display: block;
+    opacity: .5;
+    cursor: pointer;
+}
+.Social-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
