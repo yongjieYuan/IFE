@@ -1,0 +1,588 @@
+html,
+body {
+    min-height: 760px;
+}
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url(./Fonts/Proxima\ Nova\ Regular.otf);
+}
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src: url(./Fonts/ProximaNova-Semibold.woff.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ProximaNova-Semibold";
+}
+a {
+    text-decoration: none;
+}
+i {
+    font-style: normal;
+}
+ul,
+ol {
+    list-style: none;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    display: flex;
+}
+.primary {
+    width: 106px;
+    height: 100%;
+    min-width: 67px;
+    background-color: #1d2531;
+}
+.Active_Highlight {
+    position: absolute;
+    left: -34%;
+    top: 14%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgb(35, 153, 241);
+    box-shadow: 0 0 6px 2px rgb(35, 153, 241);
+    z-index: 68;
+}
+.primary .item {
+    position: fixed;
+    left: 1%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    z-index: 666;
+}
+.primary li {
+    margin-top: 32%;
+    cursor: pointer;
+}
+.primary .bottom-action {
+    position: fixed;
+    left: 1%;
+    bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    width: 3%;
+}
+.primary .bottom-action img {
+    cursor: pointer;
+}
+/*第二栏*/
+.secondary {
+    position: relative;
+    padding: 30px;
+    width: 190px;
+    height: calc(100% - 60px);
+    background-color: #222c3c;
+}
+.part {
+    border-bottom: .1px solid #2a3547;
+    padding-bottom: 18px;
+}
+.part li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 36px;
+    color: #b7c0cd;
+    cursor: pointer;
+}
+.secondary .part img {
+    width: 16px;
+}
+.secondary .part span {
+    font-size: 12px;
+    line-height: 40px;
+    color: #5b6779;
+}
+.secondary .part i {
+    display: inline-block;
+    width: 32px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    background: url(./images/Base.png);
+}
+.part-2 li ~ li{
+    justify-content: flex-start;
+}
+.part-2 li img {
+    margin-right: 13px;
+    vertical-align: bottom;
+}
+.part-3 {
+    border: 0;
+}
+.part-3 .lighter {
+    color: #fff;
+}
+.part-3 .ex {
+    border-radius: 50%;
+    background-image: -moz-linear-gradient( -90deg, rgb(244,84,56) 0%, rgb(203,39,10) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(244,84,56) 0%, rgb(203,39,10) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(244,84,56) 0%, rgb(203,39,10) 100%);
+    width: 24px;
+    height: 24px;
+    z-index: 44;
+}
+.serve-capacity {
+    position: absolute; 
+    bottom: 2%;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+} 
+.serve-capacity em {
+    margin-left: 22px;
+    font-style: normal;
+}
+.serve-capacity .base {
+    position: relative;
+    display: block;
+    margin-top: 15px;
+    width: 190px;
+    height: 4px;
+    background-color: rgb(71, 83, 100);
+    opacity: 0.302;
+    z-index: 60;
+  }
+  .serve-capacity .base .fill {
+    position: absolute;
+    left: 0;
+    display: block;
+    margin-left: 0;
+    width: 40px;
+    height: 4px;
+    background-image: -moz-linear-gradient( 0deg, rgb(127,91,230) 1%, rgb(157,143,227) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(127,91,230) 1%, rgb(157,143,227) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(127,91,230) 1%, rgb(157,143,227) 100%);
+    z-index: 61;
+  }
+  /*chat部分*/
+.chat {
+    display: flex; 
+    flex: 1;
+    flex-direction: column;
+}
+.top-bar {
+    position: relative;
+    height: 80px;
+    border-bottom: 1px solid #e6e9ec;
+}
+.top-bar h3 {
+    display: inline-block;
+    padding: 0 30px;
+    font-family: "Proxima Nova Regular";
+    font-size: 24px;
+    line-height: 80px;
+    color: #354052;
+}
+ .profile {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 205px;
+}
+.top-bar .photo {
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-image: url(./images/Face1.png);
+}
+.top-bar .photo .status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.top-bar .photo .status::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: 11px;
+    height: 11px;
+    border: 4px solid #38a76a;
+    border-radius: 50%;
+
+}
+.profile .name {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+}
+.profile .username {
+    font-size: 16px;
+    color: #2399f1;
+}
+.profile .admin {
+    font-size: 14px;
+    color: #b5b5b5;
+}
+.dropdown {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 11px;
+    height: 7px;
+    background-image: url(./images/dropdown.png);
+    cursor: pointer;
+}
+.chatZone {
+    flex: 8;
+    display: flex;
+}
+.chats {
+    display: flex;
+    flex-direction: column;
+    width: 424px;
+    border-right: 1px solid #e6e9ec;
+}
+.chats .search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #e6e9ec;
+}
+.chats .search input{
+    border: 1px solid #e6e9ec;
+    padding: 10px 15px;
+    width: 310px;
+    height: 16px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.chats .search img {
+    position: absolute;
+    top: 50%;
+    right: 13%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.contacts {
+    flex: 1;
+}
+.friends .item {
+    position: relative;
+    box-sizing: border-box;
+    padding: 16px 22px 0 30px;
+    height: 138px;
+    border-bottom: 1px solid #e6e9ec;
+}
+.friends .item .avatar {
+    position: relative;
+    overflow: hidden;
+}
+.avatar .time {
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    line-height: 36px;
+    color: #7f8fa4;
+}
+.avatar-photo {
+    float: left;
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: url(./images/Face2.png) center;
+}
+.friends .item-2 .avatar-photo {
+    background-image: url(./images/Face3.png);
+}
+.friends .item-3 .avatar-photo {
+    background-image: url(./images/Face4.png);
+}
+.friends .item-4 .avatar-photo {
+    background-image: url(./images/Face5.png);
+}
+.friends .item-5 .avatar-photo {
+    background-image: url(./images/Face6.png);
+}
+.friends .item-6 .avatar-photo {
+    background-image: url(./images/Face7.png);
+}
+.friends .item-7 .avatar-photo {
+    background-image: url(./images/Face8.png);
+}
+.friends .avatar .name {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #2399f1;
+}
+.friends .item .commity {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #b5b5b5;
+}
+.friends .item .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #585d68; 
+}
+.friends .item-1 {
+    position: relative;
+}
+.friends .item-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 3px;
+    height: 100%;
+    background-color: #2399f1;
+}
+.friends .content p{
+    text-overflow: ellipsis;
+    font-family: "Proxima Nova Regular";
+}
+.friends .content em {
+    display: block;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-style: normal;
+    background-image: -moz-linear-gradient( 90deg, rgb(25,145,235) 0%, rgb(46,161,248) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(25,145,235) 0%, rgb(46,161,248) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(25,145,235) 0%, rgb(46,161,248) 100%);
+    color: #fff;
+}
+.top-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    height: 70px;
+    border-bottom: 1px solid #e6e9ec;
+}
+.profile-name {
+    position: relative;
+    font-size: 18px;
+    color: #585d68;
+}
+.profile-name::after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1bb934;
+}
+.functions {
+    display: flex;
+    align-items: center;
+}
+.pages,
+.functions .tools {
+    display: inline-block;
+}
+.functions ul {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 4px;
+}
+.functions .tools {
+    margin-right: 24px;
+    padding-right: 24px;
+    border-right: 1px solid #f0f1f4;
+}
+.functions li {
+    float: left;
+    border: 1px solid rgb(206, 208, 218);
+    width: 36px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    cursor: pointer;
+}
+.pages {
+    display: flex;
+    align-items: center;
+}
+.pages ul {
+    margin-left: 16px;
+    margin-right: 20px;
+}
+.functions span {
+    display: inline-block;
+    font-size: 14px;
+    color: #56688a;
+}
+.openChat {
+    position: relative;
+    flex: 8;
+}
+.chatting .messages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.chatting .messages:nth-of-type(1) {
+    border-bottom: 1px solid rgba(127, 143, 164, .4);
+}
+.chatting .messages:nth-of-type(1)::after {
+    content: "Tuesday";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    display: inline-block;
+    padding: 0 17px;
+    font-family: "Proxima Nova Regular";
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #7f8fa4;
+    background-color: #fff;
+}
+.chatting .messages:nth-of-type(2) {
+    border-bottom: 1px solid rgba(35, 153, 241, .4);
+}
+.chatting .messages:nth-of-type(2)::after {
+     content: "New Messages";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    display: inline-block;
+    padding: 0 17px;
+    font-family: "Proxima Nova Regular";
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #2399f1;
+    background-color: #fff;
+}
+.chatting .messages > li {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #585d68;
+} 
+.chatting .name {
+    display: inline-block;
+    font-size: 16px;
+}
+.chatting .time {
+    display: inline-block;
+    margin-left: 8px;
+    line-height: 36px;
+    color: #7f8fa4;
+}
+.chatting .messages p {
+    font-family: "Proxima Nova Regular";
+    margin-left: 68px;
+    margin-right: 28px;
+    font-size: 14px;
+    line-height: 19px;
+}
+.messages li:nth-of-type(2) .avatar-photo{
+    background-image: url(./images/Face1.png);
+}
+.messages .photos {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.messages .photos li {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 13px;
+    border-radius: 4px;
+    font-size: 0;/*消除因为inline-block而产生的空格*/
+    cursor: pointer;
+}
+.open-pic {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(50, 56, 68, .3);
+    transition: .2s ease-in-out;
+}
+.open-pic img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.photos li:hover .open-pic {  
+    opacity: 1; 
+}
+.write {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    width: 769px;
+    height: 54px;
+}
+.add-file {
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    background-image: url(./images/Add\ a\ file\ icon.png);
+    cursor: pointer;
+}
+.write input {
+    flex: 1;
+    outline: none;
+    padding: 0 19px;
+    height: 54px;
+    border: 1px solid #dfe3e9;
+    border-radius: 0 4px 4px 0;
+    font-family: "Proxima Nova Regular";
+    font-size: 14px;
+    line-height: 19px;
+    color: #585d68;
+}
+.voice {
+    position: absolute;
+    right: 12px;
+    width: 14px;
+    height: 16px;
+    background-image: url(./images/Record\ voicemail\ icon.png);
+    cursor: pointer;
+}
+  
