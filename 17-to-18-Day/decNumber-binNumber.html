@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+        <input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
+        <button id="trans-btn">转化为二进制</button>
+        <p id="result">运算结果</p>
+        <script>
+            let decNum = document.getElementById('dec-number');
+            let binBit = document.getElementById('bin-bit');
+            let btn = document.getElementById('trans-btn');
+            let res = document.getElementById('result');
+            btn.addEventListener('click', dec2bin);
+            // 实现党点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+            // Some coding
+
+            function dec2bin() {
+                // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+                let binNumber = []; //声明一个数组用来获取每次除二的余数
+                let decNumber = decNum.value; //获取用户的输入值
+                if (isInteger(decNumber)) {
+                    alert('输入必须为一个非负整数');
+                    return false;
+                }
+                while (true) {
+                    //如果当前数字已经等于0则退出循环
+                    if (decNumber == 0)
+                        break;
+                    binNumber.push(decNumber % 2); //除二取余
+                    decNumber = parseInt(decNumber / 2); //除二
+                }
+                let str = binNumber.reverse().join('');
+                //转化显示后的二进制数为bin-bit中输入的数字宽度
+                if (str.length >= binBit.value) {
+                    //如果bin-bit小于转化后的二进制本身位数，则使用原本的位数，如dec-number为5，bin-bit为2，依然输出101，但同时在console中报个错
+                    console.log('error');
+                } else {
+                    let len = binBit.value - str.length; //计算bin-bit比转换后的二进制小多少
+                    //小多少个数字就循环几次并在str前加0
+                    for (let i = 0; i < len; i++) {
+                        str = '0' + str;
+                    }
+                }
+                res.innerHTML = str; //1、将数组数字翻转 2、通过join数组方法，使数组里的数字拼接成字符串(join方法会改变原来的数组，而不是返回一个数组)
+            }
+
+            function isInteger(num) {
+                /*判断是否是整数
+               1、任何整数都会被1整除，即余数是0；我们可以利用这个规则来判断是否是整数 num%1===0
+               2、使用Math.round、Math.ceil、Math.floor判断：
+                   整数取整后还是等于自己；可以利用这个特性来判断是否是整数。Math对象的round、ceil、floor方法都可以对一个数进行舍入取整。
+            */
+                return num < 0 || num !== num;
+            }
+        </script>
+    </body>
+</body>
+
+</html>

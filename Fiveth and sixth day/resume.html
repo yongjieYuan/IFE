@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style_1.css">
 </head>
+<style>
+    #time {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        border: 1px dashed greenyellow;
+    }
+    
+    .clock {
+        font-size: 26px;
+    }
+</style>
+
 <body>
     <div class="wrap clearfix">
         <div class="title">
@@ -35,33 +49,37 @@
                     <dd>良好的沟通能力，主动积极，努力勤奋</dd>
                 </dl>
             </div>
-                <div class="edu-info">
-                    <h2>教育经历</h2>
-                    <dl>
-                        <dt>本科</dt>
-                        <dd>百度前段技术学院小薇学院</dd>
-                    </dl>
-                    <dl>
-                        <dt>研究生</dt>
-                        <dd>百度前端技术学院大斌学院</dd>
-                    </dl>
-                </div>
+            <div class="edu-info">
+                <h2>教育经历</h2>
+                <dl>
+                    <dt>本科</dt>
+                    <dd>百度前段技术学院小薇学院</dd>
+                </dl>
+                <dl>
+                    <dt>研究生</dt>
+                    <dd>百度前端技术学院大斌学院</dd>
+                </dl>
+            </div>
             <div class="item-ex">
                 <h2>项目经历</h2>
-                <dl>
+                <dl>`
                     <dt>小度小度</dt>
                     <dd>作为前端工程师角色参与了ABC组件的开发</dd>
-                </dl>  
-                <dl>  
+                </dl>
+                <dl>
                     <dt>SAN Doc</dt>
                     <dd>作为文档工程师参与了SAN Doc编写</dd>
                 </dl>
             </div>
         </div>
-        <div id = "change" class="tag">
+        <div id="change" class="tag">
             点击切换样式
+        </div>
+        <div class="clock">
+            <p id="time"></p>
         </div>
     </div>
 </body>
 <script src="resume.js"></script>
+
 </html>
